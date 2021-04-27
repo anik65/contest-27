@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css flies-->
+    <!--all.css-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!--bootstrap.css-->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--fontawesome.css-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!--fontawesome.css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <!--aos.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<!--====================================================-->
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <div class="header-container">
+                    <div class="left_nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample03">
+                            <ul class="navbar-nav ">
+                                <li class="active">
+                                    <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-columns"></i>Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-columns"></i>Employee Directory</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-columns"></i>Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right_nav">
+                        <ul class="settings">
+                            <li><a href=""><i class="fas fa-power-off"></i> Logout(David)</a></li>
+                            <li><a href=""><i class="fas fa-columns"></i>Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="dash_body">
+        <div class="section-container">
+            <div class="right_sidebar">
+                <ul class="item-tags">
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Organisation Overview</a></li>
+                    <li><a href="">Company News</a></li>
+                    <li><a href="">Attendance</a></li>
+                    <li><a href="">Post</a></li>
+                </ul>
+            </div>
+            <div class="profile_body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="profile text-center">
+                                <div class="edit">
+                                    <a href=""> <i class="fas fa-ellipsis-v"></i></a>
+                                </div>
+                                <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="">
+                                <h2>Anik Kumar Bosu</h2>
+                                <div class="active-status">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                                <ul class="profile-icon ">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="overview">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h5>Organisation Overview</h5>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="edit">
+                                            <a href=""> <i class="fas fa-ellipsis-v"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="members text-center">
+                                                    <p>Total Employees</p>
+                                                    <h6>11</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="members text-center">
+                                                    <p>Consultants</p>
+                                                    <h6>1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div id="myfirstchart"></div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div id="mysecchart"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="overview">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h5>Company News</h5>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="edit">
+                                            <a href=""> <i class="fas fa-ellipsis-v"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="text-block">
+                                            <a href="">Welcome to iFundi Employee Portal</a>
+                                            <p>Date Created: 2016-07-30</p>
+                                            <p class="inbox-item-date badge badge-warning text-white">Article</p>
+                                        </div>
+                                        <div class="text-block">
+                                            <a href="">Contract Management</a>
+                                            <p>Date Created: 2016-07-30</p>
+                                            <p class="inbox-item-date badge badge-warning text-white">Article</p>
+                                        </div>
+                                        <div class="text-block">
+                                            <a href="">Regenesys Business School</a>
+                                            <p>Date Created: 2016-07-30</p>
+                                            <p class="inbox-item-date badge badge-danger  text-white">Announcement</p>
+
+                                        </div>
+                                        <div class="text-block">
+                                            <a href="">Welcome to iFundi Employee Portal</a>
+                                            <p>Date Created: 2016-07-30</p>
+                                            <p class="inbox-item-date badge badge-danger  text-white">Announcement</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button text-center">
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attendance-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h5>Attendance</h5>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="edit">
+                                    <a href=""> <i class="fas fa-ellipsis-v"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <p class="headline">On Leave or Upcoming Leave</p>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="">
+                                            <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="co-lg-9">
+                                        <div class="details">
+                                            <p>David Gitonga</p>
+                                            <ul class="tags">
+                                                <li><a href="">Apr-27</a></li>
+                                                <li><a href="">Approved</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="">
+                                            <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="co-lg-9">
+                                        <div class="details">
+                                            <p>David Gitonga</p>
+                                            <ul class="tags">
+                                                <li><a href="">Apr-27</a></li>
+                                                <li><a href="">Approved</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left_sidebar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h5 class="section-title">Recent Post</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="edit">
+                                <a href=""> <i class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="">
+                                    <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-lg-8">   
+                                <p>Lorem ipsum is placeholder text commonly used ...</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="">
+                                    <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-lg-8">   
+                                <p>Lorem ipsum is placeholder text commonly used ...</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="">
+                                    <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-lg-8">   
+                                <p>Lorem ipsum is placeholder text commonly used ...</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="">
+                                    <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-lg-8">   
+                                <p>Lorem ipsum is placeholder text commonly used ...</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="">
+                                    <img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-lg-8">   
+                                <p>Lorem ipsum is placeholder text commonly used ...</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--====================================================-->
+
+    <!--js plugins-->
+    <!--jquery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jquery.counterup.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+        crossorigin="anonymous"></script>
+    <!--waypoints.min.js-->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="assets/js/style.js"></script>
+
+
+    <script>
+        new Morris.Donut({
+
+            element: 'myfirstchart',
+
+            data: [
+                { label: '2008', value: 20 },
+                { label: '2009', value: 10 },
+
+            ],
+            colors: ['rgb(87, 197, 165)', 'rgb(154, 166, 201)'],
+            xkey: 'year',
+
+            ykeys: ['value'],
+
+            labels: ['Value']
+        });
+        new Morris.Donut({
+
+            element: 'mysecchart',
+
+            data: [
+                { label: '2008', value: 20 },
+                { label: '2009', value: 10 },
+
+            ],
+            colors: ['rgb(87, 197, 165)', 'rgb(154, 166, 201)'],
+            xkey: 'year',
+
+            ykeys: ['value'],
+
+            labels: ['Value']
+        });
+    </script>
+</body>
+
+</html>
